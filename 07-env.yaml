@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: environment
+  labels:
+    purpose: demonstrate-envars
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:
+    - name: COURSE
+      value: "Kubernetes"
+    - name: TRAINER
+      value: "SIVAKUMAR REDDY M"
