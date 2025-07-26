@@ -7,14 +7,14 @@ metadata:
     purpose: rs-demo
     project: roboshop
     app: nginx
-  spec:
-    replicas: 3
+spec:
+  replicas: 3
     # These are the labels replicaset used to create pod replicas,this should match pod labels
-    selector:
-      matchLabels:
-        purpose: rs-demo
-        project: roboshop
-        app: nginx
+  selector:
+    matchLabels:
+      purpose: rs-demo
+      project: roboshop
+      app: nginx
     # This is pod definition
   template:
     metadata:
