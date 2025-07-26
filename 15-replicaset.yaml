@@ -11,7 +11,7 @@ metadata:
     replicas: 3
     # These are the labels replicaset used to create pod replicas,this should match pod labels
     selector:
-      matchlabels:
+      matchLabels:
         purpose: rs-demo
         project: roboshop
         app: nginx
